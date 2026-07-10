@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashi Signal AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>🤖 Kashi Signal AI</h1>
+    <p id="status">🟢 AI Status: Online</p>
+    <p id="currentDate">📅 Date: --/--/----</p>
+    <p id="liveClock">🕒 Time: --:--:--</p>
+<p>Smart Trading Signals by Kashi AI</p>
+
+    <hr>
+
+    <h3>Select Trading Pair</h3>
+
+    <select id="pair">
+        <option>EUR/USD</option>
+        <option>XAU/USD (Gold)</option>
+        <option>BTC/USD</option>
+    </select>
+
+    <br><br>
+
+    <h3>Select Expiry Time</h3>
+
+    <select id="time">
+        <option>10 Seconds</option>
+        <option>30 Seconds</option>
+        <option>1 Minute</option>
+    </select>
+
+    <br><br>
+<div class="stats">
+    <div class="card">
+        <h2 id="totalSignals">0</h2>
+        <p>Total Signals</p>
+    </div>
+</div>
+<div class="card">
+    <h2 id="winRate">95%</h2>
+    <p>Win Rate</p>
+</div>
+    <button id="generate">
+        Generate AI Signal
+    </button>
+
+    <hr>
+
+    <h2 id="decision">
+        Waiting for Signal...
+    </h2>
+    <div class="card">
+    <h3>📢 Last Signal</h3>
+    <p id="lastSignal">No signal yet...</p>
+</div>
+    <h3>📜 Signal History</h3>
+<button id="clearHistory">
+    🗑 Clear History
+</button>
+<div id="history">
+    No signals yet...
+</div>
+
+</div>
+<hr>
+
+<p style="text-align:center; color:#888; font-size:14px;">
+    © 2026 Kashi Signal AI <br>
+    Developed by Kashan
+</p>
+<script src="app.js"></script>
+
+</body>
+</html>
